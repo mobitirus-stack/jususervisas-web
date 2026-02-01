@@ -44,25 +44,24 @@
 }
 
 .about-content {
-    padding: 4rem 0;
+    padding: 4rem 2rem;
 }
 
 .about-content .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
 }
 
+/* FIXED: Story section with proper flex layout */
 .about-story {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    display: flex;
     gap: 4rem;
     margin-bottom: 4rem;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .story-text {
-    max-width: 100%;
+    flex: 1;
     min-width: 0;
 }
 
@@ -78,10 +77,11 @@
     font-size: 1.05rem;
     line-height: 1.9;
     margin-bottom: 1.5rem;
-    text-align: left;
 }
 
 .story-timeline {
+    flex-shrink: 0;
+    width: 320px;
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius: 20px;
@@ -106,6 +106,7 @@
     font-weight: 800;
     color: #ffc107;
     width: 60px;
+    flex-shrink: 0;
 }
 
 .timeline-item .event {
@@ -203,8 +204,12 @@
 
 @media (max-width: 1024px) {
     .about-story {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         gap: 2rem;
+    }
+
+    .story-timeline {
+        width: 100%;
     }
 
     .facts-grid,
