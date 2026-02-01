@@ -6,110 +6,112 @@ export function AboutPage() {
 
     return (
         <div className="about-page page-transition">
+            {/* Hero */}
             <div className="about-hero">
                 <img src="/hero_autoservice.png" alt="Autoservisas" className="about-hero-bg" />
                 <div className="about-hero-overlay">
                     <div className="container">
                         <span className="section-tag">{t('tag.about')}</span>
-                        <h1>{t('about.title')}</h1>
-                        <p>{t('about.subtitle')}</p>
+                        <h1>Apie mus</h1>
+                        <p>Patikimas partneris automobilių priežiūros srityje</p>
                     </div>
                 </div>
             </div>
 
-            <div className="about-content">
-                <div className="container">
-                    {/* Story Section - Simple two column */}
-                    <section className="story-section" style={{ display: 'flex', gap: '3rem', alignItems: 'flex-start' }}>
-                        <div className="story-left" style={{ flex: '1 1 60%', minWidth: '300px' }}>
-                            <h2>Mūsų istorija</h2>
-                            <p>{t('about.text1')}</p>
-                            <p>{t('about.text2')}</p>
-                            <p>{t('about.text3')}</p>
-                        </div>
-                        <div className="story-right" style={{ flex: '0 0 320px' }}>
-                            <div className="timeline-box">
-                                <div className="timeline-row">
-                                    <span className="t-year">1996</span>
-                                    <span className="t-event">Įmonės įkūrimas</span>
-                                </div>
-                                <div className="timeline-row">
-                                    <span className="t-year">2000</span>
-                                    <span className="t-event">Autoserviso plėtra</span>
-                                </div>
-                                <div className="timeline-row">
-                                    <span className="t-year">2010</span>
-                                    <span className="t-event">Krovinių pervežimai</span>
-                                </div>
-                                <div className="timeline-row highlight">
-                                    <span className="t-year">2024</span>
-                                    <span className="t-event">28+ metų patirtis</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+            {/* Main Content */}
+            <div className="about-main">
+                {/* History - NOW VERTICAL LAYOUT */}
+                <div className="history-block">
+                    <h2>Mūsų istorija</h2>
+                    <div className="history-text">
+                        <p>{t('about.text1')}</p>
+                        <p>{t('about.text2')}</p>
+                        <p>{t('about.text3')}</p>
+                    </div>
+                </div>
 
-                    {/* Facts Section */}
-                    <section className="facts-section">
-                        <h2>Kodėl mes?</h2>
-                        <div className="facts-grid">
-                            <div className="fact-card">
-                                <span className="fact-icon">📅</span>
-                                <span className="fact-text">{t('about.fact1')}</span>
-                            </div>
-                            <div className="fact-card">
-                                <span className="fact-icon">📋</span>
-                                <span className="fact-text">{t('about.fact2')}</span>
-                            </div>
-                            <div className="fact-card">
-                                <span className="fact-icon">👥</span>
-                                <span className="fact-text">{t('about.fact3')}</span>
-                            </div>
-                            <div className="fact-card">
-                                <span className="fact-icon">🔧</span>
-                                <span className="fact-text">{t('about.fact4')}</span>
-                            </div>
-                            <div className="fact-card">
-                                <span className="fact-icon">🚚</span>
-                                <span className="fact-text">{t('about.fact5')}</span>
-                            </div>
-                            <div className="fact-card">
-                                <span className="fact-icon">📡</span>
-                                <span className="fact-text">{t('about.fact6')}</span>
-                            </div>
+                {/* Timeline - SEPARATE BLOCK */}
+                <div className="timeline-block">
+                    <div className="timeline-grid">
+                        <div className="timeline-item">
+                            <div className="timeline-year">1996</div>
+                            <div className="timeline-desc">Įmonės įkūrimas</div>
                         </div>
-                    </section>
+                        <div className="timeline-item">
+                            <div className="timeline-year">2000</div>
+                            <div className="timeline-desc">Autoserviso plėtra</div>
+                        </div>
+                        <div className="timeline-item">
+                            <div className="timeline-year">2010</div>
+                            <div className="timeline-desc">Krovinių pervežimai</div>
+                        </div>
+                        <div className="timeline-item active">
+                            <div className="timeline-year">2024</div>
+                            <div className="timeline-desc">28+ metų patirtis</div>
+                        </div>
+                    </div>
+                </div>
 
-                    {/* Company Info */}
-                    <section className="company-section">
-                        <h2>Įmonės informacija</h2>
-                        <div className="company-grid">
-                            <div className="company-card">
-                                <h4>Juridinis pavadinimas</h4>
-                                <p>UAB „Vegesta"</p>
-                            </div>
-                            <div className="company-card">
-                                <h4>Prekės ženklas</h4>
-                                <p>Europadangos</p>
-                            </div>
-                            <div className="company-card">
-                                <h4>Įmonės kodas</h4>
-                                <p>123639588</p>
-                            </div>
-                            <div className="company-card">
-                                <h4>Įkurta</h4>
-                                <p>1996.06.28</p>
-                            </div>
-                            <div className="company-card">
-                                <h4>Adresas</h4>
-                                <p>Kirtimų g. 59C, Vilnius</p>
-                            </div>
-                            <div className="company-card">
-                                <h4>Veikla</h4>
-                                <p>Padangos, dalys, pervežimas</p>
-                            </div>
+                {/* Why Us */}
+                <div className="why-block">
+                    <h2>Kodėl mes?</h2>
+                    <div className="why-grid">
+                        <div className="why-card">
+                            <span>📅</span>
+                            <p>{t('about.fact1')}</p>
                         </div>
-                    </section>
+                        <div className="why-card">
+                            <span>📋</span>
+                            <p>{t('about.fact2')}</p>
+                        </div>
+                        <div className="why-card">
+                            <span>👥</span>
+                            <p>{t('about.fact3')}</p>
+                        </div>
+                        <div className="why-card">
+                            <span>🔧</span>
+                            <p>{t('about.fact4')}</p>
+                        </div>
+                        <div className="why-card">
+                            <span>🚚</span>
+                            <p>{t('about.fact5')}</p>
+                        </div>
+                        <div className="why-card">
+                            <span>📡</span>
+                            <p>{t('about.fact6')}</p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Company Info */}
+                <div className="info-block">
+                    <h2>Įmonės informacija</h2>
+                    <div className="info-grid">
+                        <div className="info-card">
+                            <h4>Juridinis pavadinimas</h4>
+                            <p>UAB „Vegesta"</p>
+                        </div>
+                        <div className="info-card">
+                            <h4>Prekės ženklas</h4>
+                            <p>Europadangos</p>
+                        </div>
+                        <div className="info-card">
+                            <h4>Įmonės kodas</h4>
+                            <p>123639588</p>
+                        </div>
+                        <div className="info-card">
+                            <h4>Įkurta</h4>
+                            <p>1996.06.28</p>
+                        </div>
+                        <div className="info-card">
+                            <h4>Adresas</h4>
+                            <p>Kirtimų g. 59C, Vilnius</p>
+                        </div>
+                        <div className="info-card">
+                            <h4>Veikla</h4>
+                            <p>Padangos, dalys, pervežimas</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
