@@ -1,0 +1,74 @@
+.whyus {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #0a0f1e 0%, #111827 100%);
+    position: relative;
+}
+
+.whyus::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at top right, rgba(255, 193, 7, 0.05) 0%, transparent 50%);
+}
+
+.whyus .container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.advantage-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.advantage-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 193, 7, 0.3);
+    background: rgba(255, 193, 7, 0.03);
+}
+
+.advantage-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 1.25rem;
+}
+
+.advantage-card h3 {
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.advantage-card p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+    .advantages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .whyus {
+        padding: 4rem 1.5rem;
+    }
+
+    .advantages-grid {
+        grid-template-columns: 1fr;
+    }
+}

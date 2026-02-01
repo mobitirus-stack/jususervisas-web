@@ -1,0 +1,319 @@
+.tire-catalog-page {
+    min-height: 100vh;
+    padding-top: 80px;
+    background: #0a0f1e;
+}
+
+/* Page transition animation */
+.page-transition {
+    animation: fadeInPage 0.5s ease-out;
+}
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade in animation for elements */
+.fade-in {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-row {
+    opacity: 0;
+    animation: fadeInRow 0.4s ease-out forwards;
+}
+
+@keyframes fadeInRow {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.tire-catalog-hero {
+    background: linear-gradient(135deg, #0a0f1e 0%, #1a1f2e 100%);
+    padding: 5rem 2rem 4rem;
+    text-align: center;
+    position: relative;
+}
+
+.tire-catalog-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, rgba(255, 193, 7, 0.08) 0%, transparent 70%);
+}
+
+.tire-catalog-hero .container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tire-catalog-hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    color: white;
+    margin: 1rem 0;
+}
+
+.tire-catalog-hero p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.tire-catalog-content {
+    padding: 3rem 2rem 4rem;
+}
+
+.tire-catalog-content .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tire-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: rgba(255, 193, 7, 0.1);
+    border: 1px solid rgba(255, 193, 7, 0.2);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    animation-delay: 0.1s;
+}
+
+.notice-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.tire-notice p {
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin: 0 0 0.5rem;
+}
+
+.tire-notice p:last-child {
+    margin-bottom: 0;
+}
+
+.tire-category {
+    margin-bottom: 4rem;
+}
+
+.tire-category:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.tire-category:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.tire-category:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.tire-category-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+.tire-category-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 0.5rem;
+}
+
+.tire-category-info {
+    flex: 1;
+}
+
+.tire-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.tire-category-info h2 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.tire-count {
+    color: #ffc107;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.tire-table-wrapper {
+    overflow-x: auto;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tire-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.tire-table th {
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tire-table td {
+    padding: 0.85rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: white;
+}
+
+.tire-table tr:last-child td {
+    border-bottom: none;
+}
+
+.tire-table tr:hover {
+    background: rgba(255, 193, 7, 0.05);
+}
+
+.size-cell {
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.note-cell {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+}
+
+.price-cell {
+    font-weight: 700;
+    color: #ffc107;
+    font-size: 1.1rem;
+}
+
+.tire-cta-section {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.1) 0%, rgba(255, 152, 0, 0.05) 100%);
+    border: 1px solid rgba(255, 193, 7, 0.2);
+    border-radius: 20px;
+    padding: 2.5rem;
+    text-align: center;
+    margin-top: 3rem;
+    animation-delay: 0.5s;
+}
+
+.tire-cta-section h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.tire-cta-section p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1.5rem;
+}
+
+.tire-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.tire-cta {
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.tire-cta.primary {
+    background: linear-gradient(135deg, #ffc107, #ff9800);
+    color: #0a0f1e;
+}
+
+.tire-cta.primary:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(255, 193, 7, 0.3);
+}
+
+.tire-cta.secondary {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+.tire-cta.secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .tire-category-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tire-category-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .tire-table th,
+    .tire-table td {
+        padding: 0.75rem 1rem;
+    }
+
+    .tire-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}

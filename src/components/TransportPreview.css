@@ -1,0 +1,126 @@
+.transport-preview {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.transport-preview-bg {
+    position: absolute;
+    inset: 0;
+}
+
+.transport-preview-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.transport-preview-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(10, 15, 30, 0.95) 0%, rgba(10, 15, 30, 0.7) 50%, rgba(10, 15, 30, 0.4) 100%);
+    display: flex;
+    align-items: center;
+}
+
+.transport-preview .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.transport-preview-content {
+    max-width: 600px;
+}
+
+.transport-preview h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    color: white;
+    margin: 1rem 0;
+}
+
+.transport-preview p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.transport-features-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.feature-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 50px;
+    padding: 0.6rem 1.25rem;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.feature-pill span {
+    font-size: 1rem;
+}
+
+.transport-cta-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.transport-btn {
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.transport-btn.primary {
+    background: linear-gradient(135deg, #ffc107, #ff9800);
+    color: #0a0f1e;
+}
+
+.transport-btn.primary:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(255, 193, 7, 0.3);
+}
+
+.transport-btn.secondary {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+.transport-btn.secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .transport-preview {
+        height: auto;
+        min-height: 500px;
+    }
+
+    .transport-preview-overlay {
+        padding: 4rem 0;
+    }
+
+    .transport-cta-row {
+        flex-direction: column;
+    }
+
+    .transport-btn {
+        text-align: center;
+    }
+}

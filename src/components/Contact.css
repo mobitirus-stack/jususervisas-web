@@ -1,0 +1,224 @@
+.contact {
+    padding: 6rem 2rem;
+    background: linear-gradient(180deg, #0d1225 0%, #0a0f1e 100%);
+}
+
+.contact .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-header .section-tag {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.contact-lead {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+/* Locations Grid */
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.location-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.location-card:hover {
+    border-color: rgba(255, 193, 7, 0.3);
+    transform: translateY(-5px);
+}
+
+.location-card.primary {
+    border-color: rgba(255, 193, 7, 0.3);
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.05) 0%, rgba(255, 152, 0, 0.02) 100%);
+}
+
+.location-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.location-badge {
+    background: linear-gradient(135deg, #ffc107, #ff9800);
+    color: #0a0f1e;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.primary-badge {
+    background: rgba(255, 193, 7, 0.15);
+    color: #ffc107;
+    padding: 0.3rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.location-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.location-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.location-icon {
+    font-size: 1.1rem;
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 193, 7, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.location-item strong {
+    color: white;
+    font-size: 1rem;
+}
+
+.phones {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.phones a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.phones a:hover {
+    color: #ffc107;
+}
+
+.location-map {
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.location-cta {
+    display: block;
+    width: 100%;
+    padding: 0.85rem;
+    background: linear-gradient(135deg, #ffc107, #ff9800);
+    color: #0a0f1e;
+    border-radius: 12px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.location-cta:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(255, 193, 7, 0.3);
+}
+
+/* Extra Contact Info */
+.contact-extra {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.contact-item-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.contact-detail .contact-icon {
+    font-size: 1.3rem;
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 193, 7, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-detail div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.contact-detail strong {
+    color: white;
+    font-size: 0.95rem;
+}
+
+.contact-detail span {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+}
+
+.contact-detail a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.contact-detail a:hover {
+    color: #ffc107;
+}
+
+@media (max-width: 1024px) {
+    .locations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-item-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .contact {
+        padding: 4rem 1.5rem;
+    }
+}

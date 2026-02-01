@@ -1,0 +1,140 @@
+.about {
+    padding: 6rem 2rem;
+    background: linear-gradient(180deg, #0a0f1e 0%, #0d1225 100%);
+}
+
+.about .container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+.about-content .section-tag {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.about-content .section-title {
+    margin-bottom: 1.5rem;
+}
+
+.about-lead {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.about-text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.about-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.year-badge {
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.15) 0%, rgba(255, 152, 0, 0.1) 100%);
+    border: 2px solid rgba(255, 193, 7, 0.3);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.year-number {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #ffc107, #ff9800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.year-text {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.facts-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.fact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.fact-item:hover {
+    border-color: rgba(255, 193, 7, 0.2);
+    transform: translateY(-2px);
+}
+
+.fact-item .fact-icon {
+    font-size: 1.5rem;
+}
+
+.fact-item .fact-text {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .about-content {
+        max-width: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .about {
+        padding: 4rem 1.5rem;
+    }
+
+    .facts-list {
+        grid-template-columns: 1fr;
+    }
+
+    .year-badge {
+        width: 150px;
+        height: 150px;
+    }
+
+    .year-number {
+        font-size: 2.5rem;
+    }
+}

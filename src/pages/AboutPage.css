@@ -1,0 +1,223 @@
+.about-page {
+    min-height: 100vh;
+    padding-top: 80px;
+    background: #0a0f1e;
+}
+
+.about-hero {
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+}
+
+.about-hero-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(10, 15, 30, 0.95) 0%, rgba(10, 15, 30, 0.6) 100%);
+    display: flex;
+    align-items: center;
+}
+
+.about-hero-overlay .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.about-hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    color: white;
+    margin: 1rem 0;
+}
+
+.about-hero p {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+}
+
+.about-content {
+    padding: 4rem 0;
+}
+
+.about-content .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.about-story {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.story-text {
+    max-width: 100%;
+}
+
+.story-text h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.story-text p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.story-timeline {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    position: relative;
+}
+
+.timeline-item:last-child {
+    border-bottom: none;
+}
+
+.timeline-item .year {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #ffc107;
+    width: 60px;
+}
+
+.timeline-item .event {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+}
+
+.timeline-item.current {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.1) 0%, rgba(255, 152, 0, 0.05) 100%);
+    margin: 0 -2rem;
+    padding: 1.25rem 2rem;
+    border-radius: 12px;
+    border-bottom: none;
+}
+
+.facts-section {
+    margin-bottom: 4rem;
+}
+
+.facts-section h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.fact-card {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.fact-card:hover {
+    border-color: rgba(255, 193, 7, 0.3);
+    transform: translateY(-3px);
+}
+
+.fact-icon {
+    font-size: 2rem;
+}
+
+.fact-text {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+}
+
+.company-info h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.company-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.company-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.company-card h4 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+}
+
+.company-card p {
+    color: white;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    .about-story {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .facts-grid,
+    .company-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .about-hero {
+        height: 350px;
+    }
+
+    .facts-grid,
+    .company-grid {
+        grid-template-columns: 1fr;
+    }
+}

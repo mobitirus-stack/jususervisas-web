@@ -1,0 +1,232 @@
+.promotions-page {
+    min-height: 100vh;
+    padding-top: 80px;
+    background: #0a0f1e;
+}
+
+.promotions-hero {
+    background: linear-gradient(135deg, #0a0f1e 0%, #1a1f2e 100%);
+    padding: 5rem 2rem 4rem;
+    text-align: center;
+    position: relative;
+}
+
+.promotions-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, rgba(255, 193, 7, 0.08) 0%, transparent 70%);
+}
+
+.promotions-hero .container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.promotions-hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    color: white;
+    margin: 1rem 0;
+}
+
+.promotions-hero p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.promotions-content {
+    padding: 4rem 2rem;
+}
+
+.promotions-content .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.promotions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.promo-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 2.5rem;
+    text-align: center;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.promo-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255, 193, 7, 0.3);
+    box-shadow: 0 20px 60px rgba(255, 193, 7, 0.15);
+}
+
+.promo-badge {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: linear-gradient(135deg, #ffc107, #ff9800);
+    color: #0a0f1e;
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    letter-spacing: 1px;
+}
+
+.promo-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.promo-card h3 {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.promo-card p {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.promo-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #4caf50;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background: #4caf50;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.promo-info-section {
+    margin-bottom: 4rem;
+}
+
+.promo-info-section h2 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.step-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #ffc107, #ff9800);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #0a0f1e;
+    margin: 0 auto 1.25rem;
+}
+
+.step-card h4 {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.step-card p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.promo-cta {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.15) 0%, rgba(255, 152, 0, 0.1) 100%);
+    border: 1px solid rgba(255, 193, 7, 0.3);
+    border-radius: 24px;
+    padding: 3rem;
+    text-align: center;
+}
+
+.promo-cta h3 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.promo-cta p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.promo-cta-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #ffc107, #ff9800);
+    color: #0a0f1e;
+    padding: 1rem 2.5rem;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.promo-cta-btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(255, 193, 7, 0.4);
+}
+
+@media (max-width: 1024px) {
+
+    .promotions-grid,
+    .steps-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
