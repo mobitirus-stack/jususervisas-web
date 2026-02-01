@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(10, 15, 30, 0.9);
+  background: rgba(10, 15, 30, 0.95);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
@@ -41,7 +41,8 @@
   letter-spacing: 1px;
 }
 
-.nav {
+/* Desktop Navigation */
+.desktop-nav {
   display: flex;
   gap: 0.25rem;
 }
@@ -69,7 +70,7 @@
 .header-right {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .header-phone {
@@ -131,121 +132,133 @@
   color: #0a0f1e;
 }
 
-.mobile-menu-btn {
+/* Mobile Menu Toggle Button */
+.menu-toggle {
   display: none;
   background: none;
   border: none;
-  padding: 0.75rem;
+  padding: 10px;
   cursor: pointer;
-  z-index: 1001;
-  position: relative;
+  z-index: 1010;
 }
 
-.hamburger {
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+}
+
+.menu-icon span {
   display: block;
-  width: 24px;
   height: 2px;
+  width: 100%;
   background: white;
-  position: relative;
+  border-radius: 2px;
   transition: all 0.3s ease;
 }
 
-.hamburger::before,
-.hamburger::after {
-  content: '';
-  position: absolute;
-  width: 24px;
-  height: 2px;
-  background: white;
-  left: 0;
-  transition: all 0.3s ease;
+.menu-icon.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
 }
 
-.hamburger::before {
-  top: -8px;
+.menu-icon.open span:nth-child(2) {
+  opacity: 0;
 }
 
-.hamburger::after {
-  bottom: -8px;
+.menu-icon.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
-.hamburger.open {
-  background: transparent;
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+  display: none;
 }
 
-.hamburger.open::before {
-  transform: rotate(45deg);
-  top: 0;
-}
-
-.hamburger.open::after {
-  transform: rotate(-45deg);
-  bottom: 0;
-}
-
-@media (max-width: 1100px) {
-  .nav-link {
-    padding: 0.5rem 0.75rem;
-    font-size: 0.85rem;
-  }
-}
-
-@media (max-width: 900px) {
-  .mobile-menu-btn {
-    display: block !important;
-    z-index: 1002;
-  }
-
-  .nav {
-    position: fixed;
-    top: 80px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(10, 15, 30, 0.98);
-    backdrop-filter: blur(20px);
-    flex-direction: column;
-    padding: 1.5rem;
-    transform: translateX(100%);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    overflow-y: auto;
-    z-index: 999;
-    display: flex !important;
-  }
-
-  .nav.open {
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .nav-link {
-    padding: 1.25rem 1rem;
-    font-size: 1.1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius: 0;
-  }
-
-  .nav-link:last-child {
-    border-bottom: none;
+/* RESPONSIVE - MOBILE */
+@media (max-width: 1024px) {
+  .desktop-nav {
+    display: none;
   }
 
   .header-phone {
     display: none;
   }
 
-  /* Show phone in mobile nav */
-  .nav::after {
-    content: '📞 +370 699 30214';
+  .menu-toggle {
     display: block;
-    margin-top: 2rem;
+  }
+
+  .mobile-menu-overlay {
+    display: flex;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    animation: fadeIn 0.2s ease;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .mobile-nav {
+    width: 100%;
+    max-width: 350px;
+    margin-left: auto;
+    background: #0a0f1e;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    animation: slideIn 0.3s ease;
+    overflow-y: auto;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .mobile-nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    padding: 1.25rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.2s ease;
+  }
+
+  .mobile-nav-link:hover,
+  .mobile-nav-link.active {
+    color: #ffc107;
+    background: rgba(255, 193, 7, 0.1);
+  }
+
+  .mobile-phone-btn {
+    display: block;
+    margin-top: 1.5rem;
     padding: 1.25rem;
     background: linear-gradient(135deg, #ffc107, #ff9800);
     color: #0a0f1e;
     font-weight: 700;
     text-align: center;
+    text-decoration: none;
     border-radius: 12px;
     font-size: 1.1rem;
   }

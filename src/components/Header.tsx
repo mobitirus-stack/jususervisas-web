@@ -1,12 +1,29 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useI18n } from '../i18n'
 import './Header.css'
 
 export function Header() {
     const { language, setLanguage, t } = useI18n()
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const [menuOpen, setMenuOpen] = useState(false)
     const location = useLocation()
+
+    // Close menu on route change
+    useEffect(() => {
+        setMenuOpen(false)
+    }, [location.pathname])
+
+    // Prevent body scroll when menu open
+    useEffect(() => {
+        if (menuOpen) {
+            document.body.style.overflow = 'hidden'
+        } else {
+            document.body.style.overflow = ''
+        }
+        return () => {
+            document.body.style.overflow = ''
+        }
+    }, [menuOpen])
 
     const navItems = [
         { path: '/', label: 'nav.home' },
@@ -18,6 +35,10 @@ export function Header() {
         { path: '/contact', label: 'nav.contacts' },
     ]
 
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen)
+    }
+
     return (
         <header className="header">
             <div className="header-container">
@@ -26,13 +47,13 @@ export function Header() {
                     <span className="logo-sub">Autoservisas | 1996</span>
                 </Link>
 
-                <nav className={`nav ${mobileMenuOpen ? 'open' : ''}`}>
+                {/* Desktop Nav */}
+                <nav className="desktop-nav">
                     {navItems.map((item) => (
                         <Link
                             key={item.path}
                             to={item.path}
                             className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}
-                            onClick={() => setMobileMenuOpen(false)}
                         >
                             {t(item.label)}
                         </Link>
@@ -60,19 +81,42 @@ export function Header() {
                         </button>
                     </div>
 
+                    {/* Mobile Menu Button */}
                     <button
-                        className="mobile-menu-btn"
-                        onClick={() => {
-                            console.log('Menu clicked!', !mobileMenuOpen)
-                            setMobileMenuOpen(!mobileMenuOpen)
-                        }}
-                        style={{ display: 'block' }}
-                        aria-label="Menu"
+                        className="menu-toggle"
+                        onClick={toggleMenu}
+                        aria-label="Toggle menu"
+                        type="button"
                     >
-                        <span className={`hamburger ${mobileMenuOpen ? 'open' : ''}`}></span>
+                        <span className={`menu-icon ${menuOpen ? 'open' : ''}`}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
                     </button>
                 </div>
             </div>
+
+            {/* Mobile Menu Overlay */}
+            {menuOpen && (
+                <div className="mobile-menu-overlay" onClick={() => setMenuOpen(false)}>
+                    <nav className="mobile-nav" onClick={(e) => e.stopPropagation()}>
+                        {navItems.map((item) => (
+                            <Link
+                                key={item.path}
+                                to={item.path}
+                                className={`mobile-nav-link ${location.pathname === item.path ? 'active' : ''}`}
+                                onClick={() => setMenuOpen(false)}
+                            >
+                                {t(item.label)}
+                            </Link>
+                        ))}
+                        <a href="tel:+37069930214" className="mobile-phone-btn">
+                            📞 +370 699 30214
+                        </a>
+                    </nav>
+                </div>
+            )}
         </header>
     )
 }
