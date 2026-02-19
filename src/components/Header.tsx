@@ -37,49 +37,54 @@ export function Header() {
     }
 
     return (
-        <header className="header">
-            <div className="header-container">
-                <Link to="/" className="logo">
-                    <span className="logo-text">OKRA1</span>
-                    <span className="logo-sub">Autoservisas</span>
-                </Link>
+        <>
+            <header className="header">
+                <div className="header-container">
+                    <Link to="/" className="logo">
+                        <span className="logo-text">OKRA1</span>
+                        <span className="logo-sub">Autoservisas</span>
+                    </Link>
 
-                {/* Desktop Nav */}
-                <nav className="desktop-nav">
-                    {navItems.map((item) => (
-                        <Link
-                            key={item.path}
-                            to={item.path}
-                            className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}
-                        >
-                            {t(item.label)}
-                        </Link>
-                    ))}
-                </nav>
+                    {/* Desktop Nav */}
+                    <nav className="desktop-nav">
+                        {navItems.map((item) => (
+                            <Link
+                                key={item.path}
+                                to={item.path}
+                                className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}
+                            >
+                                {t(item.label)}
+                            </Link>
+                        ))}
+                    </nav>
 
-                <div className="header-right">
-                    <a href="tel:+37067841599" className="header-phone">
-                        <span className="phone-icon">📞</span>
-                        <span className="phone-number">+370 678 41599</span>
-                    </a>
+                    <div className="header-right">
+                        <a href="tel:+37067841599" className="header-phone">
+                            <span className="phone-icon">📞</span>
+                            <span className="phone-number">+370 678 41599</span>
+                        </a>
+                    </div>
+
+                    {/* Mobile Menu Button - Moved outside header-right for reliable positioning */}
+                    <button
+                        className="menu-toggle"
+                        onClick={toggleMenu}
+                        aria-label="Toggle menu"
+                        type="button"
+                    >
+                        <span className={`menu-icon ${menuOpen ? 'open' : ''}`}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+
                 </div>
+            </header>
 
-                {/* Mobile Menu Button - Moved outside header-right for reliable positioning */}
-                <button
-                    className="menu-toggle"
-                    onClick={toggleMenu}
-                    aria-label="Toggle menu"
-                    type="button"
-                >
-                    <span className={`menu-icon ${menuOpen ? 'open' : ''}`}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
-                </button>
-
-                {/* Mobile Menu Overlay */}
-                {menuOpen && (
+            {/* Mobile Menu Overlay - Moved OUTSIDE header to escape backdrop-filter containing block constraint */}
+            {
+                menuOpen && (
                     <div className="mobile-menu-overlay" onClick={() => setMenuOpen(false)}>
                         <nav className="mobile-nav" onClick={(e) => e.stopPropagation()}>
                             {navItems.map((item) => (
@@ -97,8 +102,8 @@ export function Header() {
                             </a>
                         </nav>
                     </div>
-                )}
-            </div>
-        </header>
+                )
+            }
+        </>
     )
 }
