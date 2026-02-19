@@ -34,8 +34,8 @@ export function AboutPage() {
                     <div className="timeline-grid">
 
                         <div className="timeline-item active">
-                            <div className="timeline-year">2024</div>
-                            <div className="timeline-desc">20+ metų patirtis</div>
+                            <div className="timeline-year">2006</div>
+                            <div className="timeline-desc">Veiklos pradžia</div>
                         </div>
                     </div>
                 </div>
