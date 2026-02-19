@@ -40,7 +40,7 @@ export function Header() {
         <>
             <header className="header">
                 <div className="header-container">
-                    <Link to="/" className="logo">
+                    <Link to="/" className="logo" onClick={() => window.scrollTo(0, 0)}>
                         <span className="logo-text">OKRA1</span>
                         <span className="logo-sub">Autoservisas</span>
                     </Link>

@@ -33,7 +33,7 @@
 }
 
 .about-lead {
-    color: var(--text-color);
+    color: rgba(255, 255, 255, 0.95);
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.7;
@@ -41,7 +41,7 @@
 }
 
 .about-text {
-    color: var(--text-muted);
+    color: rgba(255, 255, 255, 0.85);
     font-size: 1rem;
     line-height: 1.8;
     margin-bottom: 1rem;
