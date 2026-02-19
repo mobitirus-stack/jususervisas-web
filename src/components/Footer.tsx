@@ -49,7 +49,7 @@ export function Footer() {
 
                 <div className="footer-bottom">
                     <div className="footer-legal">
-                        <p>© 2024 Okra1. {t('footer.rights')}</p>
+                        <p>© 2024 Okra1. {t('footer.rights')} | <Link to="/admin" className="admin-footer-link">Administratorius</Link></p>
                         <p className="footer-company">
                             {t('footer.company')} | Žirmūnų g. 54A, Vilniaus m. sav.
                         </p>
