@@ -9,8 +9,6 @@ export function About() {
         { icon: '📋', text: t('about.fact2') },
         { icon: '👥', text: t('about.fact3') },
         { icon: '🔧', text: t('about.fact4') },
-        { icon: '🚚', text: 'Krovininis transportas' },
-        { icon: '📦', text: 'Nemokamas saugojimas' },
     ]
 
     return (
@@ -27,7 +25,7 @@ export function About() {
 
                     <div className="about-visual">
                         <div className="year-badge">
-                            <span className="year-number">1996</span>
+                            <span className="year-number">2006</span>
                             <span className="year-text">Nuo metų</span>
                         </div>
 

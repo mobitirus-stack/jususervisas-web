@@ -8,8 +8,6 @@ export function WhyUs() {
         { icon: '📅', titleKey: 'whyus.experience.title', descKey: 'whyus.experience.desc' },
         { icon: '🔧', titleKey: 'whyus.equipment.title', descKey: 'whyus.equipment.desc' },
         { icon: '👥', titleKey: 'whyus.team.title', descKey: 'whyus.team.desc' },
-        { icon: '🚚', titleKey: 'whyus.trucks.title', descKey: 'whyus.trucks.desc' },
-        { icon: '📦', titleKey: 'whyus.storage.title', descKey: 'whyus.storage.desc' },
         { icon: '📍', titleKey: 'whyus.location.title', descKey: 'whyus.location.desc' },
     ]
 
