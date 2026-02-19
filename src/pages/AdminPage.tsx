@@ -17,6 +17,9 @@ interface Service {
 
 export function AdminPage() {
     const { t } = useI18n();
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [password, setPassword] = useState('');
+
     const [heroData, setHeroData] = useState({
         title: localStorage.getItem('hero_title') || t('hero.title'),
         subtitle: localStorage.getItem('hero_subtitle') || t('hero.subtitle'),
@@ -39,6 +42,36 @@ export function AdminPage() {
             setServices(defaultServices);
         }
     }, []);
+
+    const handleLogin = (e: React.FormEvent) => {
+        e.preventDefault();
+        if (password === 'admin') {
+            setIsLoggedIn(true);
+        } else {
+            alert('Neteisingas slaptažodis!');
+        }
+    };
+
+    if (!isLoggedIn) {
+        return (
+            <div className="admin-login-page">
+                <form className="login-card" onSubmit={handleLogin}>
+                    <h2>Prisijungimas</h2>
+                    <div className="form-group">
+                        <label>Slaptažodis</label>
+                        <input
+                            type="password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            placeholder="Įveskite slaptažodį"
+                            autoFocus
+                        />
+                    </div>
+                    <button type="submit" className="save-btn">Prisijungti</button>
+                </form>
+            </div>
+        );
+    }
 
     const saveHero = () => {
         localStorage.setItem('hero_title', heroData.title);
