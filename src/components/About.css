@@ -22,10 +22,14 @@
 .about-content .section-tag {
     display: inline-block;
     margin-bottom: 1rem;
+    color: #ffc107;
+    /* Keep accent color */
+    font-weight: 700;
 }
 
 .about-content .section-title {
     margin-bottom: 1.5rem;
+    color: var(--text-color);
 }
 
 .about-lead {

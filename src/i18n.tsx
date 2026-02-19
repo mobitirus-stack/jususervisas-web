@@ -1,7 +1,7 @@
 import { useState, createContext, useContext } from 'react';
 import type { ReactNode } from 'react';
 
-type Language = 'lt' | 'ru';
+type Language = 'lt';
 
 interface I18nContextType {
     language: Language;
@@ -19,7 +19,7 @@ const translations = {
 
         // Hero
         'hero.title': 'Profesionalus autoservisas ir padangų centras Vilniuje',
-        'hero.subtitle': 'Profesionalus padangų montavimas, ratlankių lyginimas ir kondicionierių pildymas Vilniuje. Daugiau nei 8 metų patirtis – patikimas rezultatas.',
+        'hero.subtitle': 'Profesionalus padangų montavimas, ratlankių lyginimas ir kondicionierių pildymas Vilniuje. Daugiau nei 20 metų patirtis – patikimas rezultatas.',
         'hero.cta.contact': 'Susisiekite dabar',
         'hero.cta.services': 'Mūsų paslaugos',
         'hero.stat.years': 'metų patirties',
@@ -29,9 +29,9 @@ const translations = {
         // About
         'about.title': 'Apie mus',
         'about.subtitle': 'Patikimas partneris automobilių priežiūros srityje',
-        'about.text1': 'Okra1 – tai patikimas partneris automobilių priežiūros srityje. Sukaupėme daugiau nei 8 metų patirtį padangų montavimo, ratlankių lyginimo ir kondicionierių pildymo srityse.',
+        'about.text1': 'Okra1 – tai patikimas partneris automobilių priežiūros srityje. Sukaupėme daugiau nei 20 metų patirtį padangų montavimo, ratlankių lyginimo ir kondicionierių pildymo srityse.',
         'about.text2': 'Naudojame moderniausią įrangą ir dirbame su kvalifikuotų specialistų komanda. Mūsų tikslas – suteikti aukščiausios kokybės paslaugas ir užtikrinti jūsų saugumą kelyje.',
-        'about.fact1': 'Daugiau nei 8 metų patirtis',
+        'about.fact1': 'Daugiau nei 20 metų patirtis',
         'about.fact2': 'Kvalifikuoti specialistai',
         'about.fact3': 'Profesionali komanda',
         'about.fact4': 'Šiuolaikiška įranga',
@@ -49,7 +49,7 @@ const translations = {
         // Service: Mounting
         'service.mounting.title': 'Padangų montavimas',
         'service.mounting.short': 'Greitas Padangų montavimas, keitimas | Ratų balansavimas',
-        'service.mounting.desc': 'Atliekame profesionalų ratų montavimą ir padangų montavimą Vilniuje jau daugiau nei 8 metus. Per šį laiką aptarnavome šimtus klientų ir sukaupėme patirtį, leidžiančią darbus atlikti greitai, tiksliai ir saugiai.',
+        'service.mounting.desc': 'Atliekame profesionalų ratų montavimą ir padangų montavimą Vilniuje jau daugiau nei 20 metų. Per šį laiką aptarnavome šimtus klientų ir sukaupėme patirtį, leidžiančią darbus atlikti greitai, tiksliai ir saugiai.',
         'service.mounting.features': 'Tikslus montavimas|Preciziškas balansavimas|Minimali rizika|Ilgesnis tarnavimas',
 
 
@@ -80,7 +80,7 @@ const translations = {
         // Why Us
         'whyus.title': 'Kodėl klientai renkasi mus',
         'whyus.subtitle': 'Patikimumas, kokybė ir profesionalumas',
-        'whyus.experience.title': 'Virš 8 metų patirties',
+        'whyus.experience.title': 'Virš 20 metų patirties',
         'whyus.experience.desc': 'Ilgametė patirtis garantuoja profesionalumą ir kokybę kiekviename žingsnyje.',
         'whyus.equipment.title': 'Šiuolaikiška įranga',
         'whyus.equipment.desc': 'Naudojame pažangią diagnostikos ir remonto įrangą. Tikslumas ir efektyvumas – mūsų prioritetai.',
@@ -131,128 +131,6 @@ const translations = {
         'tag.testimonials': 'ATSILIEPIMAI',
         'tag.contact': 'KONTAKTAI',
 
-    },
-    ru: {
-        // Navigation
-        'nav.home': 'Главная',
-        'nav.about': 'О нас',
-        'nav.services': 'Услуги',
-        'nav.contacts': 'Контакты',
-
-        // Hero
-        'hero.title': 'Профессиональный автосервис и шинный центр в Вильнюсе',
-        'hero.subtitle': 'Профессиональный монтаж шин, правка дисков и заправка кондиционеров в Вильнюсе. Более 8 лет опыта – надежный результат.',
-        'hero.cta.contact': 'Свяжитесь с нами',
-        'hero.cta.services': 'Наши услуги',
-        'hero.stat.years': 'лет опыта',
-        'hero.stat.clients': 'довольных клиентов',
-        'hero.stat.quality': 'гарантия качества',
-
-        // About
-        'about.title': 'О компании',
-        'about.subtitle': 'Надёжный партнёр в сфере обслуживания автомобилей',
-        'about.text1': 'Okra1 – это надёжный партнёр в сфере обслуживания автомобилей. Мы накопили более 8 лет опыта в области монтажа шин, правки дисков и заправки кондиционеров.',
-        'about.text2': 'Мы используем современное оборудование и работаем с командой квалифицированных специалистов. Наша цель – предоставлять услуги высочайшего качества.',
-        'about.fact1': 'Более 8 лет опыта',
-        'about.fact2': 'Квалифицированные специалисты',
-        'about.fact3': 'Профессиональная команда',
-        'about.fact4': 'Современное оборудование',
-        'about.fact5': 'Собственный автопарк',
-        'about.fact6': 'Система GPS-слежения',
-
-        // Services
-        'services.title': 'Наши услуги',
-        'services.subtitle': 'Комплексное обслуживание автомобилей в одном месте',
-        'services.intro': 'Мы предлагаем широкий спектр услуг – от монтажа шин до сложного ремонта подвески и грузоперевозок по всей Европе.',
-        'services.viewAll': 'Все услуги',
-        'services.learnMore': 'Узнать больше',
-        'services.backToServices': '← Назад к услугам',
-
-        // Service: Mounting
-        'service.mounting.title': 'Монтаж шин',
-        'service.mounting.short': 'Монтаж и балансировка шин!',
-        'service.mounting.desc': 'Профессиональный монтаж и балансировка летних, зимних и всесезонных шин для легковых автомобилей, микроавтобусов и грузового транспорта. Используем современное оборудование для точной балансировки.',
-        'service.mounting.features': 'Быстрое обслуживание|Точная балансировка|Все типы шин|Грузовой транспорт',
-
-
-        // Service: Rim Straightening
-        'service.rim_straightening.title': 'Правка дисков',
-        'service.rim_straightening.short': 'Правка алюминиевых и стальных дисков.',
-        'service.rim_straightening.desc': 'Профессиональная правка дисков с использованием современного оборудования. Восстанавливаем геометрию диска, завариваем трещины.',
-        'service.rim_straightening.features': 'Восстановление геометрии|Сварка|Покраска|Правка',
-
-        // Service: Tire Repair
-        'service.tire_repair.title': 'Ремонт шин',
-        'service.tire_repair.short': 'Качественный ремонт шин.',
-        'service.tire_repair.desc': 'Ремонтируем проколотые, порезанные шины. Клеим холодным и горячим способом.',
-        'service.tire_repair.features': 'Горячая вулканизация|Холодная склейка|Монтаж|Балансировка',
-
-        // Service: AC
-        'service.ac.title': 'Кондиционеры',
-        'service.ac.short': 'Быстро и качественно заправляем кондиционеры!',
-        'service.ac.desc': 'Заправка, диагностика и ремонт автомобильного кондиционера. Подготовьтесь к летнему сезону с полностью работающей климатической системой. Используем только качественные хладагенты и проверяем на утечки.',
-        'service.ac.features': 'Быстрая заправка|Проверка утечек|Качественный хладагент|Полная диагностика',
-
-
-
-
-
-
-
-        // Why Us
-        'whyus.title': 'Почему выбирают нас',
-        'whyus.subtitle': 'Надёжность, качество и профессионализм',
-        'whyus.experience.title': 'Более 8 лет опыта',
-        'whyus.experience.desc': 'Многолетний опыт гарантирует профессионализм и качество на каждом этапе.',
-        'whyus.equipment.title': 'Современное оборудование',
-        'whyus.equipment.desc': 'Используем передовое диагностическое и ремонтное оборудование. Точность и эффективность – наши приоритеты.',
-        'whyus.team.title': 'Квалифицированная команда',
-        'whyus.team.desc': 'Наши специалисты постоянно совершенствуют свои навыки и следят за новейшими автомобильными технологиями.',
-        'whyus.trucks.title': 'Грузовой транспорт',
-        'whyus.trucks.desc': 'Обслуживаем не только легковые автомобили, но и микроавтобусы, а также грузовой транспорт.',
-        'whyus.storage.title': 'Бесплатное хранение',
-        'whyus.storage.desc': 'Постоянным клиентам – бесплатное сезонное хранение шин в безопасных помещениях.',
-        'whyus.location.title': 'Удобное расположение',
-        'whyus.location.desc': 'Мы находимся в Вильнюсе, ул. Киртиму 59C – легко доступное место с удобным подъездом.',
-
-        // Testimonials
-        'testimonials.title': 'Отзывы клиентов',
-        'testimonials.subtitle': 'Рекомендации и отзывы',
-        'testimonials.1.text': 'Пользуюсь услугами Okra1 уже несколько лет. Всегда профессиональное обслуживание, быстрая работа и честные цены. Рекомендую всем, кто ищет надёжный автосервис в Вильнюсе.',
-        'testimonials.1.author': 'Постоянный клиент',
-        'testimonials.2.text': 'Привёз автомобиль на сход-развал – всё сделали быстро и качественно. Приятные сотрудники, чётко объяснили, что нужно делать. Обязательно вернусь.',
-        'testimonials.2.author': 'Довольная клиентка',
-        'testimonials.3.text': 'Отличный выбор шин и профессиональный монтаж. Особенно ценю бесплатное сезонное хранение – очень удобно.',
-        'testimonials.3.author': 'Корпоративный клиент',
-
-        // Contact
-        'contact.title': 'Свяжитесь с нами',
-        'contact.subtitle': 'Мы готовы помочь',
-        'contact.company': 'Компания',
-        'contact.address': 'Адрес',
-        'contact.phone': 'Телефоны',
-        'contact.fax': 'Факс',
-        'contact.email': 'Эл. почта',
-        'contact.hours': 'Часы работы',
-        'contact.weekdays': 'Понедельник – Пятница',
-        'contact.saturday': 'Суббота',
-        'contact.sunday': 'Воскресенье',
-        'contact.closed': 'Выходной',
-        'contact.cta.call': 'Позвоните сейчас',
-        'contact.cta.email': 'Напишите нам',
-        'contact.cta.map': 'Найдите нас на карте',
-
-        // Footer
-        'footer.rights': 'Все права защищены.',
-        'footer.company': 'Okra1',
-
-        // Section tags
-        'tag.services': 'УСЛУГИ',
-        'tag.about': 'О НАС',
-        'tag.whyus': 'ПОЧЕМУ МЫ',
-        'tag.testimonials': 'ОТЗЫВЫ',
-        'tag.contact': 'КОНТАКТЫ',
-
     }
 };
 
@@ -262,7 +140,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     const [language, setLanguage] = useState<Language>('lt');
 
     const t = (key: string): string => {
-        return translations[language][key as keyof typeof translations['lt']] || key;
+        return translations[language]?.[key as keyof typeof translations['lt']] || key;
     };
 
     return (

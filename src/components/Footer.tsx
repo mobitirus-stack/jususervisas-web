@@ -16,7 +16,7 @@ export function Footer() {
                         </p>
                         <div className="footer-contact-quick">
                             <a href="tel:+37067841599">📞 +370 678 41599</a>
-                            <a href="mailto:europadangos1@gmail.com">✉️ europadangos1@gmail.com</a>
+                            <a href="mailto:okraautoservisas@gmail.com">✉️ okraautoservisas@gmail.com</a>
                             <a href="https://www.facebook.com/okra1servisas/?locale=lt_LT" target="_blank" rel="noopener noreferrer">Facebook</a>
                         </div>
                     </div>
@@ -27,8 +27,6 @@ export function Footer() {
                             <Link to="/">{t('nav.home')}</Link>
                             <Link to="/about">{t('nav.about')}</Link>
                             <Link to="/services">{t('nav.services')}</Link>
-                            <Link to="/gallery">{t('nav.gallery')}</Link>
-                            <Link to="/promotions">{t('nav.promotions')}</Link>
                             <Link to="/contact">{t('nav.contacts')}</Link>
                         </div>
 

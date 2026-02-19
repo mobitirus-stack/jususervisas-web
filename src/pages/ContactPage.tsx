@@ -53,52 +53,59 @@ export function ContactPage() {
                                         </div>
                                     </div>
 
-                                    <div className="location-map">
-                                        <iframe
-                                            src={loc.mapUrl}
-                                            width="100%"
-                                            height="250"
-                                            style={{ border: 0, borderRadius: '12px' }}
-                                            allowFullScreen
-                                            loading="lazy"
-                                            referrerPolicy="no-referrer-when-downgrade"
-                                            title={`${loc.city} Location`}
-                                        />
+                                    <div className="map-container">
+                                        {/* Add your iframe map here */}
+                                        <div className="map-placeholder">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.219602278376!2d25.2611!3d54.7214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd93fb5c6408f5%3A0x400d18c70e9dd60!2sUkmerg%C4%97s%20g.%20283b%2C%2006313%20Vilnius!5e0!3m2!1sen!2slt!4v1700000000000!5m2!1sen!2slt"
+                                                width="100%"
+                                                height="100%"
+                                                style={{ border: 0 }}
+                                                allowFullScreen
+                                                loading="lazy"
+                                                referrerPolicy="no-referrer-when-downgrade"
+                                            ></iframe>
+                                        </div>
                                     </div>
 
-                                    <a href={`tel:${loc.phones[0].replace(/\s/g, '')}`} className="location-cta">
-                                        📞 Skambinti
-                                    </a>
+                                    <div className="contact-info">
+                                        <h2>Kontaktinė informacija</h2>
+
+                                        <div className="info-item">
+                                            <span className="info-icon">📍</span>
+                                            <div className="info-text">
+                                                <h3>Adresas</h3>
+                                                <p>Ukmergės 283b</p>
+                                            </div>
+                                        </div>
+
+                                        <div className="info-item">
+                                            <span className="info-icon">📞</span>
+                                            <div className="info-text">
+                                                <h3>Telefonas</h3>
+                                                <p>+370 678 41599</p>
+                                            </div>
+                                        </div>
+
+                                        <div className="info-item">
+                                            <span className="info-icon">✉️</span>
+                                            <div className="info-text">
+                                                <h3>El. paštas</h3>
+                                                <p>okraautoservisas@gmail.com</p>
+                                            </div>
+                                        </div>
+
+                                        <div className="info-item">
+                                            <span className="info-icon">🕐</span>
+                                            <div className="info-text">
+                                                <h3>Darbo laikas</h3>
+                                                <p>I-V: 08:00 - 18:00</p>
+                                                <p>VI-VII: Nedirbame</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             ))}
-                        </div>
-                    </div>
-
-                    {/* Additional Info */}
-                    <div className="contact-info-section">
-                        <div className="info-grid">
-                            <div className="info-card">
-                                <div className="info-icon">🏢</div>
-                                <div className="info-content">
-                                    <h3>{t('contact.company')}</h3>
-                                    <p>Okra1</p>
-                                </div>
-                            </div>
-
-                            <div className="info-card">
-                                <div className="info-icon">✉️</div>
-                                <div className="info-content">
-                                    <p>{t('contact.email')}</p>
-                                </div>
-                            </div>
-
-                            <div className="info-card">
-                                <div className="info-icon">🕐</div>
-                                <div className="info-content">
-                                    <h3>{t('contact.hours')}</h3>
-
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

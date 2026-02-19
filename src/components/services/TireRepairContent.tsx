@@ -57,48 +57,11 @@ export function TireRepairContent() {
 
             <section className="tire-repair-pricing">
                 <h3>Paslaugų kainos</h3>
-                <table className="price-table">
-                    <tbody>
-                        <tr>
-                            <td>Padangos montavimas ir rato balansavimas</td>
-                            <td className="price">nuo 15 €/vnt.</td>
-                        </tr>
-                        <tr>
-                            <td>Slėgio daviklio keitimas</td>
-                            <td className="price">10 €/vnt.*</td>
-                        </tr>
-                        <tr>
-                            <td>Centravimo žiedo gamyba</td>
-                            <td className="price">10 €/vnt.</td>
-                        </tr>
-                        <tr>
-                            <td>Padangos remontas</td>
-                            <td className="price">nuo 15 €/vnt.</td>
-                        </tr>
-                        <tr>
-                            <td>Rato hermetizavimas</td>
-                            <td className="price">15 €/vnt.*</td>
-                        </tr>
-                        <tr>
-                            <td>Slapto varžto išsukimas</td>
-                            <td className="price">nuo 35 €/vnt.</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p className="price-note">*Kainos nurodytos be padangos permontavimo paslaugos.</p>
+                <div className="pricing-box">
+                    <p className="price-main">Padangų remontas prasideda <strong>nuo 7 eur.</strong></p>
+                </div>
             </section>
 
-            <section className="tire-repair-faq">
-                <h3>Dažniausiai užduodami klausimai (D.U.K.)</h3>
-                <div className="faq-item">
-                    <h4>Kiek kainuoja padangų remontas?</h4>
-                    <p>Kaina priklauso nuo padangos pažeidimo ir naudojamos technologijos. Atvykite į artimiausią mūsų autoservisą – meistrai įvertins padangą ir pasiūlys optimalų remonto sprendimą.</p>
-                </div>
-                <div className="faq-item">
-                    <h4>Kokia yra padangų remonto trukmė?</h4>
-                    <p>Trukmė priklauso nuo automobilio modelio ir darbų apimties. Norėdami sužinoti preliminarią trukmę, susisiekite su Jūsų artimiausio JūsųServisas.lt autoserviso specialistais.</p>
-                </div>
-            </section>
 
             <section className="tire-repair-tech">
                 <h3>Padangų remontas ir technologijos</h3>
@@ -148,6 +111,6 @@ export function TireRepairContent() {
                     <span>Alytuje</span>
                 </div>
             </section>
-        </div>
+        </div >
     )
 }

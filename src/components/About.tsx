@@ -9,6 +9,8 @@ export function About() {
         { icon: '📋', text: t('about.fact2') },
         { icon: '👥', text: t('about.fact3') },
         { icon: '🔧', text: t('about.fact4') },
+        { icon: '🚚', text: 'Krovininis transportas' },
+        { icon: '📦', text: 'Nemokamas saugojimas' },
     ]
 
     return (

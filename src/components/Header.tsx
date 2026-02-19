@@ -4,7 +4,7 @@ import { useI18n } from '../i18n'
 import './Header.css'
 
 export function Header() {
-    const { language, setLanguage, t } = useI18n()
+    const { t } = useI18n()
     const [menuOpen, setMenuOpen] = useState(false)
     const location = useLocation()
 
@@ -62,21 +62,6 @@ export function Header() {
                         <span className="phone-icon">📞</span>
                         <span className="phone-number">+370 678 41599</span>
                     </a>
-
-                    <div className="lang-switcher">
-                        <button
-                            onClick={() => setLanguage('lt')}
-                            className={`lang-btn ${language === 'lt' ? 'active' : ''}`}
-                        >
-                            LT
-                        </button>
-                        <button
-                            onClick={() => setLanguage('ru')}
-                            className={`lang-btn ${language === 'ru' ? 'active' : ''}`}
-                        >
-                            RU
-                        </button>
-                    </div>
 
                     {/* Mobile Menu Button */}
                     <button

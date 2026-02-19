@@ -5,9 +5,9 @@ export function Testimonials() {
     const { t } = useI18n()
 
     const testimonials = [
-        { textKey: 'testimonials.1.text', authorKey: 'testimonials.1.author', rating: 5 },
-        { textKey: 'testimonials.2.text', authorKey: 'testimonials.2.author', rating: 5 },
-        { textKey: 'testimonials.3.text', authorKey: 'testimonials.3.author', rating: 5 },
+        { text: 'fast, reliable, cordial. thank you', author: 'Robert Stabile', rating: 5 },
+        { text: 'Good place to fix your wheels quickly', author: 'Juozapas Bernatavicius', rating: 5 },
+        { text: 'Very good prices, friendly personnel', author: 'Povilas Jurčys', rating: 5 },
     ]
 
     return (
@@ -26,13 +26,13 @@ export function Testimonials() {
                                 {'★'.repeat(test.rating)}
                             </div>
                             <blockquote className="testimonial-text">
-                                "{t(test.textKey)}"
+                                "{test.text}"
                             </blockquote>
                             <div className="testimonial-author">
                                 <div className="author-avatar">
-                                    {t(test.authorKey).charAt(0)}
+                                    {test.author.charAt(0)}
                                 </div>
-                                <span className="author-name">{t(test.authorKey)}</span>
+                                <span className="author-name">{test.author}</span>
                             </div>
                         </div>
                     ))}

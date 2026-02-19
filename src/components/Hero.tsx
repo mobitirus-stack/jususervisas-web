@@ -29,18 +29,13 @@ export function Hero() {
 
                     <div className="hero-stats">
                         <div className="stat-item">
-                            <span className="stat-number">8+</span>
-                            <span className="stat-label">{t('hero.stat.years')}</span>
+                            <span className="stat-number">20+</span>
+                            <span className="stat-label">metų patirties</span>
                         </div>
                         <div className="stat-divider"></div>
                         <div className="stat-item">
                             <span className="stat-number">5000+</span>
-                            <span className="stat-label">{t('hero.stat.clients')}</span>
-                        </div>
-                        <div className="stat-divider"></div>
-                        <div className="stat-item">
-                            <span className="stat-number">100%</span>
-                            <span className="stat-label">{t('hero.stat.quality')}</span>
+                            <span className="stat-label">patenkintų klientų</span>
                         </div>
                     </div>
                 </div>

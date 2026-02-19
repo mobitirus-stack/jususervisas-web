@@ -26,7 +26,6 @@ export function AboutPage() {
                     <div className="history-text">
                         <p>{t('about.text1')}</p>
                         <p>{t('about.text2')}</p>
-                        <p>{t('about.text3')}</p>
                     </div>
                 </div>
 
@@ -34,17 +33,9 @@ export function AboutPage() {
                 <div className="timeline-block">
                     <div className="timeline-grid">
 
-                        <div className="timeline-item">
-                            <div className="timeline-year">2000</div>
-                            <div className="timeline-desc">Autoserviso plėtra</div>
-                        </div>
-                        <div className="timeline-item">
-                            <div className="timeline-year">2010</div>
-                            <div className="timeline-desc">Krovinių pervežimai</div>
-                        </div>
                         <div className="timeline-item active">
                             <div className="timeline-year">2024</div>
-                            <div className="timeline-desc">8+ metų patirtis</div>
+                            <div className="timeline-desc">20+ metų patirtis</div>
                         </div>
                     </div>
                 </div>
@@ -53,14 +44,6 @@ export function AboutPage() {
                 <div className="why-block">
                     <h2>Kodėl mes?</h2>
                     <div className="why-grid">
-                        <div className="why-card">
-                            <img
-                                src="/hero_autoservice.png"
-                                alt="Okra1 Autoservisas"
-                                className="about-hero-img"
-                            /><span>📋</span>
-                            <p>{t('about.fact2')}</p>
-                        </div>
                         <div className="why-card">
                             <span>👥</span>
                             <p>{t('about.fact3')}</p>
@@ -71,11 +54,11 @@ export function AboutPage() {
                         </div>
                         <div className="why-card">
                             <span>🚚</span>
-                            <p>{t('about.fact5')}</p>
+                            <p>Aptarnaujame ne tik lengvuosius automobilius, bet ir mikroautobusus bei krovininį transportą.</p>
                         </div>
                         <div className="why-card">
-                            <span>📡</span>
-                            <p>{t('about.fact6')}</p>
+                            <span>📦</span>
+                            <p>Nuolatiniams klientams – nemokamas sezoninių padangų saugojimas saugiose patalpose.</p>
                         </div>
                     </div>
                 </div>
@@ -89,24 +72,12 @@ export function AboutPage() {
                             <p>Okra1</p>
                         </div>
                         <div className="info-card">
-                            <h4>Prekės ženklas</h4>
-                            <p>Europadangos</p>
-                        </div>
-                        <div className="info-card">
-                            <h4>Įmonės kodas</h4>
-                            <p>-</p>
-                        </div>
-                        <div className="info-card">
                             <h4>Įkurta</h4>
-                            <p>2016</p>
+                            <p>2006</p>
                         </div>
                         <div className="info-card">
                             <h4>Adresas</h4>
                             <p>Žirmūnų g. 54A, Vilnius, 09100 Vilniaus m. sav.</p>
-                        </div>
-                        <div className="info-card">
-                            <h4>Veikla</h4>
-                            <p>Padangos, dalys, pervežimas</p>
                         </div>
                     </div>
                 </div>

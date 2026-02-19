@@ -67,30 +67,7 @@ export function Contact() {
                     ))}
                 </div>
 
-                <div className="contact-extra">
-                    <div className="contact-item-row">
-                        <div className="contact-detail">
-                            <span className="contact-icon">🏢</span>
-                            <div>
-                                <strong>Okra1</strong>
-                            </div>
-                        </div>
 
-                        <div className="contact-detail">
-                            <span className="contact-icon">✉️</span>
-                            <div>
-                                <p>Susiekite su mumis</p>
-                            </div>
-                        </div>
-
-                        <div className="contact-detail">
-                            <span className="contact-icon">🕐</span>
-                            <div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
     )

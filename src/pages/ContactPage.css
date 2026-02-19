@@ -59,12 +59,14 @@
 }
 
 .locations-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
     gap: 2rem;
 }
 
 .location-card {
+    width: 100%;
+    max-width: 800px;
     background: white;
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 24px;

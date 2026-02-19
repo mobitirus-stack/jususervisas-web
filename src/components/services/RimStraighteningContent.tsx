@@ -54,20 +54,7 @@ export function RimStraighteningContent() {
             <section className="rim-pricing">
                 <h3>Kainos</h3>
                 <div className="pricing-box">
-                    <p className="price-main">Ratlankio lyginimas – <strong>nuo 20 €/vnt.</strong></p>
-                    <p className="price-note">Tiksli kaina priklauso nuo ratlankio pažeidimo tipo ir dydžio.</p>
-                </div>
-            </section>
-
-            <section className="rim-faq">
-                <h3>D.U.K.</h3>
-                <div className="faq-item">
-                    <h4>Kokia yra ratlankių lyginimo kaina?</h4>
-                    <p>Kaina priklauso nuo pažeidimo. Ne visi ratlankiai gali būti suremontuoti, todėl kviečiame kreiptis telefonu arba atvykti į Jūsų patogiausią JūsųServisas.lt autoservisą.</p>
-                </div>
-                <div className="faq-item">
-                    <h4>Kokia yra ratlankių lyginimo trukmė?</h4>
-                    <p>Trukmė priklauso nuo automobilio modelio ir darbų apimties. Norėdami sužinoti preliminarią trukmę, susisiekite su mūsų specialistais.</p>
+                    <p className="price-main">Ratlankių remontas <strong>nuo 15 eur.</strong></p>
                 </div>
             </section>
         </div>
