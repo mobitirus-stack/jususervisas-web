@@ -67,13 +67,17 @@
 
 .hero-subtitle {
     font-size: 1.25rem;
-    color: #FFFFFF;
+    color: #ffffff !important;
     margin-bottom: 2.5rem;
     max-width: 600px;
-    font-weight: 600;
-    /* Extra bright shadow and contrast */
-    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.9), 0 0 10px rgba(255, 255, 255, 0.2);
-    opacity: 1;
+    font-weight: 700;
+    /* Extremely strong shadow for maximum visibility */
+    text-shadow:
+        0 2px 4px rgba(0, 0, 0, 1),
+        0 4px 10px rgba(0, 0, 0, 0.8),
+        0 0 20px rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
+    opacity: 1 !important;
 }
 
 .hero-cta {
