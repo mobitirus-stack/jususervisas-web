@@ -236,14 +236,15 @@
 
 @media (max-width: 640px) {
     .hero-stats {
-        position: static;
+        position: relative;
+        z-index: 10;
         flex-direction: column;
         gap: 1rem;
         width: 100%;
         max-width: 100%;
         padding: 1.5rem 1rem;
         margin: 2rem auto 0;
-        background: rgba(255, 255, 255, 0.95);
+        background: #ffffff;
         border: 1px solid rgba(0, 0, 0, 0.05);
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     }
