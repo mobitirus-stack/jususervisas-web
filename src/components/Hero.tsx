@@ -8,7 +8,7 @@ export function Hero() {
     return (
         <section id="hero" className="hero">
             <div className="hero-bg">
-                <img src="/hero_autoservice.png" alt="Europadangos Autoservisas" />
+                <img src="/hero_autoservice_premium.png" alt="Okra1 Autoservisas" />
             </div>
             <div className="hero-overlay">
                 <div className="hero-content">
@@ -29,7 +29,7 @@ export function Hero() {
 
                     <div className="hero-stats">
                         <div className="stat-item">
-                            <span className="stat-number">28+</span>
+                            <span className="stat-number">8+</span>
                             <span className="stat-label">{t('hero.stat.years')}</span>
                         </div>
                         <div className="stat-divider"></div>

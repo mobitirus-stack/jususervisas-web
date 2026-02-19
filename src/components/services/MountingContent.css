@@ -1,0 +1,136 @@
+.mounting-content {
+    color: var(--text-color);
+}
+
+.mounting-content section {
+    margin-bottom: 2rem;
+}
+
+.mounting-intro h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.highlight-text {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.benefits-list, .check-list, .dots-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.benefits-list li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.benefits-list li::before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.check-list li {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.recommendation {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-left: 4px solid var(--primary-color);
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.services-grid span {
+    background: #e9ecef;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.guarantee {
+    font-weight: bold;
+    color: var(--success-color, #28a745);
+    margin-top: 0.5rem;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.pricing-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: 1px solid #dee2e6;
+}
+
+.pricing-card h4 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #f1f3f5;
+    padding-bottom: 0.5rem;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-card ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dotted #e9ecef;
+}
+
+.pricing-card ul li:last-child {
+    border-bottom: none;
+}
+
+.mounting-cta {
+    background: var(--primary-color);
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.mounting-cta h3 {
+    margin-top: 0;
+    color: white;
+}
+
+.mounting-cta p {
+    margin-bottom: 1rem;
+}
+
+.mounting-cta .strong {
+    font-weight: bold;
+    font-size: 1.1rem;
+}

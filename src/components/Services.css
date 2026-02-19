@@ -1,6 +1,6 @@
 .services {
     padding: 6rem 2rem;
-    background: #0a0f1e;
+    background: var(--bg-color);
 }
 
 .services .container {
@@ -9,7 +9,7 @@
 }
 
 .section-subtitle {
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--text-muted);
     font-size: 1.1rem;
     max-width: 600px;
     margin: 1rem auto 0;
@@ -24,14 +24,19 @@
 }
 
 .service-card {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 20px;
+    background: white;
+    /* Pure white */
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    /* Very subtle border */
+    border-radius: 24px;
+    /* More rounded */
     overflow: hidden;
     text-decoration: none;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
     animation: fadeInCard 0.6s ease-out forwards;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    /* Premium soft shadow */
 }
 
 .service-card:nth-child(1) {
@@ -79,9 +84,10 @@
 }
 
 .service-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    border-color: rgba(255, 193, 7, 0.4);
-    box-shadow: 0 20px 60px rgba(255, 193, 7, 0.15), 0 0 40px rgba(255, 193, 7, 0.05);
+    transform: translateY(-10px) scale(1.01);
+    border-color: rgba(245, 158, 11, 0.2);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+    /* Deep hover shadow */
 }
 
 .service-image {
@@ -104,11 +110,19 @@
 .service-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(10, 15, 30, 0.9) 0%, transparent 60%);
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0) 100%);
+    /* Cleaner fade */
     display: flex;
     align-items: flex-end;
     justify-content: center;
     padding-bottom: 0.75rem;
+    opacity: 0;
+    /* Hide by default for cleaner look */
+    transition: opacity 0.3s ease;
+}
+
+.service-card:hover .service-overlay {
+    opacity: 1;
 }
 
 .service-icon {
@@ -121,14 +135,16 @@
 }
 
 .service-info h3 {
-    color: white;
-    font-size: 1rem;
+    color: var(--text-color);
+    font-size: 1.25rem;
+    /* Larger title */
     font-weight: 700;
     margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
 }
 
 .service-info p {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--text-muted);
     font-size: 0.85rem;
     line-height: 1.5;
 }
@@ -141,19 +157,21 @@
 .view-all-btn {
     display: inline-block;
     padding: 1rem 2.5rem;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 12px;
-    color: white;
+    color: var(--text-color);
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
 }
 
 .view-all-btn:hover {
-    background: rgba(255, 193, 7, 0.1);
-    border-color: rgba(255, 193, 7, 0.3);
-    color: #ffc107;
+    transform: translateY(-2px);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    box-shadow: 0 10px 20px rgba(245, 158, 11, 0.1);
 }
 
 @media (max-width: 1100px) {

@@ -90,7 +90,7 @@ export function PromotionsPage() {
                     <div className="promo-cta">
                         <h3>Turite klausimų?</h3>
                         <p>Susisiekite su mumis ir sužinokite daugiau apie galiojančias akcijas!</p>
-                        <a href="tel:+37069930214" className="promo-cta-btn">
+                        <a href="tel:+37067841599" className="promo-cta-btn">
                             📞 Skambinti dabar
                         </a>
                     </div>

@@ -7,17 +7,10 @@ export function Contact() {
     const locations = [
         {
             city: 'VILNIUS',
-            address: 'Kirtimų g. 59C',
-            phones: ['+370 699 30214', '+370 699 17189'],
-            mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2310.2591926751925!2d25.153709376671518!3d54.617042078893874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ddecbc0350a433%3A0x7121d19d8bf022fc!2sVegesta!5e0!3m2!1sen!2slt!4v1769947540892!5m2!1sen!2slt',
+            address: 'Žirmūnų g. 54A, Vilnius, 09100 Vilniaus m. sav.',
+            phones: ['+370 678 41599'],
+            mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2305.1173408533355!2d25.30121111319265!3d54.70755867260151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd96bb29b1a6d7%3A0x99d45b9f8a7763c4!2sOkra1!5e0!3m2!1ses-419!2slt!4v1771517475998!5m2!1ses-419!2slt',
             isPrimary: true,
-        },
-        {
-            city: 'KAUNAS',
-            address: 'Žemaičių pl. 66',
-            phones: ['+370 671 31987'],
-            mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2293.5!2d23.9!3d54.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zWmVtYWnEjWnFsyBwbC4gNjYsIEthdW5hcw!5e0!3m2!1slt!2slt!4v1234567890123',
-            isPrimary: false,
         },
     ]
 
@@ -79,23 +72,21 @@ export function Contact() {
                         <div className="contact-detail">
                             <span className="contact-icon">🏢</span>
                             <div>
-                                <strong>UAB „Vegesta"</strong>
-                                <span>Įmonės kodas: 123639588</span>
+                                <strong>Okra1</strong>
                             </div>
                         </div>
 
                         <div className="contact-detail">
                             <span className="contact-icon">✉️</span>
                             <div>
-                                <a href="mailto:europadangos1@gmail.com">europadangos1@gmail.com</a>
+                                <p>Susiekite su mumis</p>
                             </div>
                         </div>
 
                         <div className="contact-detail">
                             <span className="contact-icon">🕐</span>
                             <div>
-                                <strong>I-V: 8:00 – 18:00</strong>
-                                <span>VI: 9:00 – 15:00 | VII: Nedirbame</span>
+
                             </div>
                         </div>
                     </div>

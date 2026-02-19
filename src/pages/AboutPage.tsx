@@ -33,10 +33,7 @@ export function AboutPage() {
                 {/* Timeline - SEPARATE BLOCK */}
                 <div className="timeline-block">
                     <div className="timeline-grid">
-                        <div className="timeline-item">
-                            <div className="timeline-year">1996</div>
-                            <div className="timeline-desc">Įmonės įkūrimas</div>
-                        </div>
+
                         <div className="timeline-item">
                             <div className="timeline-year">2000</div>
                             <div className="timeline-desc">Autoserviso plėtra</div>
@@ -47,7 +44,7 @@ export function AboutPage() {
                         </div>
                         <div className="timeline-item active">
                             <div className="timeline-year">2024</div>
-                            <div className="timeline-desc">28+ metų patirtis</div>
+                            <div className="timeline-desc">8+ metų patirtis</div>
                         </div>
                     </div>
                 </div>
@@ -57,11 +54,11 @@ export function AboutPage() {
                     <h2>Kodėl mes?</h2>
                     <div className="why-grid">
                         <div className="why-card">
-                            <span>📅</span>
-                            <p>{t('about.fact1')}</p>
-                        </div>
-                        <div className="why-card">
-                            <span>📋</span>
+                            <img
+                                src="/hero_autoservice.png"
+                                alt="Okra1 Autoservisas"
+                                className="about-hero-img"
+                            /><span>📋</span>
                             <p>{t('about.fact2')}</p>
                         </div>
                         <div className="why-card">
@@ -89,7 +86,7 @@ export function AboutPage() {
                     <div className="info-grid">
                         <div className="info-card">
                             <h4>Juridinis pavadinimas</h4>
-                            <p>UAB „Vegesta"</p>
+                            <p>Okra1</p>
                         </div>
                         <div className="info-card">
                             <h4>Prekės ženklas</h4>
@@ -97,15 +94,15 @@ export function AboutPage() {
                         </div>
                         <div className="info-card">
                             <h4>Įmonės kodas</h4>
-                            <p>123639588</p>
+                            <p>-</p>
                         </div>
                         <div className="info-card">
                             <h4>Įkurta</h4>
-                            <p>1996.06.28</p>
+                            <p>2016</p>
                         </div>
                         <div className="info-card">
                             <h4>Adresas</h4>
-                            <p>Kirtimų g. 59C, Vilnius</p>
+                            <p>Žirmūnų g. 54A, Vilnius, 09100 Vilniaus m. sav.</p>
                         </div>
                         <div className="info-card">
                             <h4>Veikla</h4>

@@ -18,7 +18,7 @@
 .transport-preview-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(10, 15, 30, 0.95) 0%, rgba(10, 15, 30, 0.7) 50%, rgba(10, 15, 30, 0.4) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0.4) 100%);
     display: flex;
     align-items: center;
 }
@@ -37,12 +37,12 @@
 .transport-preview h2 {
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 800;
-    color: white;
+    color: var(--text-color);
     margin: 1rem 0;
 }
 
 .transport-preview p {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--text-muted);
     font-size: 1.15rem;
     line-height: 1.7;
     margin-bottom: 2rem;
@@ -59,11 +59,11 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: 50px;
     padding: 0.6rem 1.25rem;
-    color: white;
+    color: var(--text-color);
     font-size: 0.9rem;
     font-weight: 500;
 }
@@ -97,13 +97,13 @@
 }
 
 .transport-btn.secondary {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    color: white;
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    color: var(--text-color);
 }
 
 .transport-btn.secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {

@@ -10,13 +10,14 @@ export function Footer() {
             <div className="footer-container">
                 <div className="footer-main">
                     <div className="footer-brand">
-                        <span className="footer-logo">EUROPADANGOS</span>
+                        <span className="footer-logo">OKRA1</span>
                         <p className="footer-tagline">
-                            Profesionalus autoservisas ir padangų centras Vilniuje nuo 1996 metų.
+                            Profesionalus autoservisas ir padangų centras Vilniuje.
                         </p>
                         <div className="footer-contact-quick">
-                            <a href="tel:+37069930214">📞 +370 699 30214</a>
+                            <a href="tel:+37067841599">📞 +370 678 41599</a>
                             <a href="mailto:europadangos1@gmail.com">✉️ europadangos1@gmail.com</a>
+                            <a href="https://www.facebook.com/okra1servisas/?locale=lt_LT" target="_blank" rel="noopener noreferrer">Facebook</a>
                         </div>
                     </div>
 
@@ -26,37 +27,32 @@ export function Footer() {
                             <Link to="/">{t('nav.home')}</Link>
                             <Link to="/about">{t('nav.about')}</Link>
                             <Link to="/services">{t('nav.services')}</Link>
-                            <Link to="/transport">{t('nav.transport')}</Link>
                             <Link to="/gallery">{t('nav.gallery')}</Link>
+                            <Link to="/promotions">{t('nav.promotions')}</Link>
                             <Link to="/contact">{t('nav.contacts')}</Link>
                         </div>
 
                         <div className="footer-col">
                             <h4 className="footer-title">Paslaugos</h4>
-                            <Link to="/services/mounting">Padangų montavimas</Link>
-                            <Link to="/services/alignment">Ratų suvedimas</Link>
-                            <Link to="/services/diagnostics">Kompiuterinė diagnostika</Link>
-                            <Link to="/services/suspension">Važiuoklės remontas</Link>
-                            <Link to="/services/trucks">Krovininių mašinų remontas</Link>
+                            <Link to="/services/mounting">{t('service.mounting.title')}</Link>
+                            <Link to="/services/rim_straightening">{t('service.rim_straightening.title')}</Link>
+                            <Link to="/services/tire_repair">{t('service.tire_repair.title')}</Link>
+                            <Link to="/services/ac">{t('service.ac.title')}</Link>
                         </div>
 
                         <div className="footer-col">
                             <h4 className="footer-title">Darbo laikas</h4>
-                            <span>Pirmadienis – Penktadienis</span>
-                            <span className="hours">8:00 – 18:00</span>
-                            <span>Šeštadienis</span>
-                            <span className="hours">9:00 – 15:00</span>
-                            <span>Sekmadienis</span>
-                            <span className="hours closed">Nedirbame</span>
+                            <span>Pirmadienis – Sekmadienis</span>
+                            <span className="hours">9:00 – 20:00</span>
                         </div>
                     </div>
                 </div>
 
                 <div className="footer-bottom">
                     <div className="footer-legal">
-                        <p>© 2024 UAB „Europadangos". {t('footer.rights')}</p>
+                        <p>© 2024 Okra1. {t('footer.rights')}</p>
                         <p className="footer-company">
-                            {t('footer.company')} | Kirtimų g. 59C, Vilnius
+                            {t('footer.company')} | Žirmūnų g. 54A, Vilniaus m. sav.
                         </p>
                     </div>
                 </div>

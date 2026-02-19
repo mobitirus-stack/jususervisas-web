@@ -29,9 +29,6 @@ export function Header() {
         { path: '/', label: 'nav.home' },
         { path: '/about', label: 'nav.about' },
         { path: '/services', label: 'nav.services' },
-        { path: '/tires', label: 'nav.catalog' },
-        { path: '/transport', label: 'nav.transport' },
-        { path: '/promotions', label: 'nav.promotions' },
         { path: '/contact', label: 'nav.contacts' },
     ]
 
@@ -43,8 +40,8 @@ export function Header() {
         <header className="header">
             <div className="header-container">
                 <Link to="/" className="logo">
-                    <span className="logo-text">EUROPADANGOS</span>
-                    <span className="logo-sub">Autoservisas | 1996</span>
+                    <span className="logo-text">OKRA1</span>
+                    <span className="logo-sub">Autoservisas</span>
                 </Link>
 
                 {/* Desktop Nav */}
@@ -61,9 +58,9 @@ export function Header() {
                 </nav>
 
                 <div className="header-right">
-                    <a href="tel:+37069930214" className="header-phone">
+                    <a href="tel:+37067841599" className="header-phone">
                         <span className="phone-icon">📞</span>
-                        <span className="phone-number">+370 699 30214</span>
+                        <span className="phone-number">+370 678 41599</span>
                     </a>
 
                     <div className="lang-switcher">
@@ -111,8 +108,8 @@ export function Header() {
                                 {t(item.label)}
                             </Link>
                         ))}
-                        <a href="tel:+37069930214" className="mobile-phone-btn">
-                            📞 +370 699 30214
+                        <a href="tel:+37067841599" className="mobile-phone-btn">
+                            📞 +370 678 41599
                         </a>
                     </nav>
                 </div>

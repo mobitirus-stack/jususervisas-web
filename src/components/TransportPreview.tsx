@@ -36,7 +36,7 @@ export function TransportPreview() {
                             <Link to="/transport" className="transport-btn primary">
                                 Sužinoti daugiau →
                             </Link>
-                            <a href="tel:+37069930214" className="transport-btn secondary">
+                            <a href="tel:+37067841599" className="transport-btn secondary">
                                 📞 Skambinti dabar
                             </a>
                         </div>

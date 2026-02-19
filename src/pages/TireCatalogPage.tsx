@@ -156,7 +156,7 @@ export function TireCatalogPage() {
                         <span className="notice-icon">ℹ️</span>
                         <div>
                             <p><strong>Kainos nurodytos orientacinės, nuo nurodytų sumų.</strong></p>
-                            <p>Tikslią kainą ir prieinamumą sužinosite susisiekę telefonu arba atvykę į vietą. Montavimo ir balansavimo paslaugos įskaičiuotos. Prekiaujame naujomis, restauruotomis ir naudotomis padangomis.</p>
+                            <p>Tikslią kainą ir prieinamumą sužinosite susisiekę telefonu (+370 678 41599) arba atvykę į vietą. Montavimo ir balansavimo paslaugos įskaičiuotos. Prekiaujame naujomis, restauruotomis ir naudotomis padangomis.</p>
                         </div>
                     </div>
 
@@ -168,8 +168,8 @@ export function TireCatalogPage() {
                         <h3>Neradote reikiamo išmero?</h3>
                         <p>Susisiekite su mumis ir mes surasime bei užsakysime jums reikiamas padangas!</p>
                         <div className="tire-cta-buttons">
-                            <a href="tel:+37069930214" className="tire-cta primary">
-                                📞 +370 699 30214
+                            <a href="tel:+37067841599" className="tire-cta primary">
+                                📞 +370 678 41599
                             </a>
                             <Link to="/contact" className="tire-cta secondary">
                                 Kontaktai →

@@ -54,8 +54,8 @@ export function Cooperation() {
                             <Link to="/contact" className="coop-btn primary">
                                 Susisiekti dėl bendradarbiavimo
                             </Link>
-                            <a href="tel:+37069930214" className="coop-btn secondary">
-                                📞 +370 699 30214
+                            <a href="tel:+37067841599" className="coop-btn secondary">
+                                📞 +370 678 41599
                             </a>
                         </div>
                     </div>

@@ -2,8 +2,28 @@
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   line-height: 1.6;
   font-weight: 400;
-  color: white;
-  background-color: #0a0f1e;
+
+  /* Theme Variables */
+  /* Premium Light Theme Variables */
+  --primary-color: #F59E0B;
+  /* Deep Amber/Gold */
+  --primary-hover: #D97706;
+  /* Richer Amber */
+  --text-color: #1F2937;
+  /* Charcoal Gray - softer than pure black */
+  --bg-color: #FAFAFA;
+  /* Soft Off-White - warmer than pure white */
+  --bg-secondary: #F3F4F6;
+  /* Light Gray */
+  --border-color: #E5E7EB;
+  /* Subtle Gray */
+  --text-muted: #6B7280;
+  /* Muted Gray */
+  --success-color: #10B981;
+  /* Emerald Green */
+
+  color: var(--text-color);
+  background-color: var(--bg-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

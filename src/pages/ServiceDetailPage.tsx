@@ -1,5 +1,8 @@
 import { useParams, Link } from 'react-router-dom'
 import { useI18n, services } from '../i18n'
+import { MountingContent } from '../components/services/MountingContent'
+import { RimStraighteningContent } from '../components/services/RimStraighteningContent'
+import { TireRepairContent } from '../components/services/TireRepairContent'
 import './ServiceDetailPage.css'
 
 export function ServiceDetailPage() {
@@ -38,42 +41,53 @@ export function ServiceDetailPage() {
                 <div className="container">
                     <div className="service-detail-grid">
                         <div className="service-main">
-                            <div className="service-description">
-                                <h2>Aprašymas</h2>
-                                <p>{t(service.descKey)}</p>
-                            </div>
+                            {service.id === 'mounting' ? (
+                                <MountingContent />
+                            ) : service.id === 'rim_straightening' ? (
+                                <RimStraighteningContent />
+                            ) : service.id === 'tire_repair' ? (
+                                <TireRepairContent />
+                            ) : (
+                                <>
+                                    <div className="service-description">
+                                        <h2>Aprašymas</h2>
+                                        <p>{t(service.descKey)}</p>
+                                    </div>
 
-                            <div className="service-features">
-                                <h2>Privalumai</h2>
-                                <div className="features-grid">
-                                    {features.map((feature, index) => (
-                                        <div key={index} className="feature-item">
-                                            <span className="feature-icon">✓</span>
-                                            <span>{feature}</span>
+                                    <div className="service-features">
+                                        <h2>Privalumai</h2>
+                                        <div className="features-grid">
+                                            {features.map((feature, index) => (
+                                                <div key={index} className="feature-item">
+                                                    <span className="feature-icon">✓</span>
+                                                    <span>{feature}</span>
+                                                </div>
+                                            ))}
                                         </div>
-                                    ))}
-                                </div>
-                            </div>
+                                    </div>
+                                </>
+                            )}
                         </div>
 
                         <div className="service-sidebar">
                             <div className="cta-box">
                                 <h3>Reikia šios paslaugos?</h3>
                                 <p>Susisiekite su mumis ir mes jums padėsime.</p>
-                                <a href="tel:+37069930214" className="cta-btn primary">
-                                    📞 +370 699 30214
+                                <a href="tel:+37067841599" className="cta-btn primary">
+                                    📞 +370 678 41599
                                 </a>
-                                <a href="mailto:europadangos1@gmail.com" className="cta-btn secondary">
-                                    ✉️ Rašyti el. laišką
+                                <a
+                                    href="mailto:info@okra1.lt"
+                                    className="cta-btn secondary"
+                                >
+                                    ✉️ info@okra1.lt
                                 </a>
                             </div>
 
                             <div className="hours-box">
                                 <h4>Darbo laikas</h4>
                                 <ul>
-                                    <li><span>I-V:</span> 8:00 – 18:00</li>
-                                    <li><span>VI:</span> 9:00 – 15:00</li>
-                                    <li><span>VII:</span> Nedirbame</li>
+                                    <li><span>I-VII:</span> 9:00 – 20:00</li>
                                 </ul>
                             </div>
                         </div>

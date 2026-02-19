@@ -4,7 +4,7 @@ export function QuickContact() {
     return (
         <div className="quick-contact">
             <a
-                href="tel:+37069930214"
+                href="tel:+37067841599"
                 className="quick-contact-btn phone"
                 aria-label="Skambinti"
             >

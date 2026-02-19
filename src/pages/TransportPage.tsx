@@ -107,8 +107,8 @@ export function TransportPage() {
                             <h2>Reikia krovinių pervežimo?</h2>
                             <p>Susisiekite su mumis ir mes surasime optimaliausią sprendimą Jūsų krovinio pervežimui!</p>
                             <div className="cta-buttons">
-                                <a href="tel:+37069930214" className="cta-primary">
-                                    📞 +370 699 30214
+                                <a href="tel:+37067841599" className="cta-primary">
+                                    📞 +370 678 41599
                                 </a>
                                 <a href="tel:+37069917189" className="cta-secondary">
                                     📞 +370 699 17189

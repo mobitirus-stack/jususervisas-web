@@ -1,0 +1,129 @@
+.rim-content {
+    color: var(--text-color);
+}
+
+.rim-content section {
+    margin-bottom: 2rem;
+}
+
+.rim-intro h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.highlight-text {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.benefits-list li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.benefits-list li::before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.check-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.check-list li {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.process-list {
+    counter-reset: process-counter;
+    list-style: none;
+    padding: 0;
+}
+
+.process-list li {
+    position: relative;
+    padding-left: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.process-list li::before {
+    counter-increment: process-counter;
+    content: counter(process-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background: var(--primary-color);
+    color: #0a0f1e;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.note {
+    background-color: rgba(255, 193, 7, 0.1);
+    padding: 1rem;
+    border-left: 4px solid var(--primary-color);
+    margin-top: 1rem;
+    font-style: italic;
+    border-radius: 0 4px 4px 0;
+}
+
+.pricing-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.price-main {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.price-main strong {
+    color: var(--primary-color);
+}
+
+.price-note {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.faq-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.faq-item p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+}
