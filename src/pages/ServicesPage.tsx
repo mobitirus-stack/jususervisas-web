@@ -26,9 +26,6 @@ export function ServicesPage() {
                             >
                                 <div className="service-card-image">
                                     <img src={service.image} alt={t(service.titleKey)} />
-                                    <div className="service-card-overlay">
-                                        <span className="service-icon-large">{service.icon}</span>
-                                    </div>
                                 </div>
                                 <div className="service-card-content">
                                     <h3>{t(service.titleKey)}</h3>

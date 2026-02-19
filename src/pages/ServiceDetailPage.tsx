@@ -100,7 +100,6 @@ export function ServiceDetailPage() {
                                 <Link key={s.id} to={`/services/${s.id}`} className="related-card">
                                     <img src={s.image} alt={t(s.titleKey)} />
                                     <div className="related-info">
-                                        <span className="related-icon">{s.icon}</span>
                                         <h4>{t(s.titleKey)}</h4>
                                     </div>
                                 </Link>

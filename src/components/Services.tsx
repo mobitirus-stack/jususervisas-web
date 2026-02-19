@@ -23,9 +23,6 @@ export function Services() {
                         >
                             <div className="service-image">
                                 <img src={service.image} alt={t(service.titleKey)} />
-                                <div className="service-overlay">
-                                    <span className="service-icon">{service.icon}</span>
-                                </div>
                             </div>
                             <div className="service-info">
                                 <h3>{t(service.titleKey)}</h3>
