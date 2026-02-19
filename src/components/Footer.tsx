@@ -16,7 +16,7 @@ export function Footer() {
                         </p>
                         <div className="footer-contact-quick">
                             <a href="tel:+37067841599">📞 +370 678 41599</a>
-                            <a href="mailto:okraautoservisas@gmail.com">✉️ okraautoservisas@gmail.com</a>
+                            <a href="mailto:info@okra1.lt">✉️ info@okra1.lt</a>
                             <a href="https://www.facebook.com/okra1servisas/?locale=lt_LT" target="_blank" rel="noopener noreferrer">Facebook</a>
                         </div>
                     </div>

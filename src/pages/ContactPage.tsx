@@ -91,7 +91,7 @@ export function ContactPage() {
                                             <span className="info-icon">✉️</span>
                                             <div className="info-text">
                                                 <h3>El. paštas</h3>
-                                                <p>okraautoservisas@gmail.com</p>
+                                                <p>info@okra1.lt</p>
                                             </div>
                                         </div>
 
