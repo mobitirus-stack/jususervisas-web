@@ -62,43 +62,43 @@ export function Header() {
                         <span className="phone-icon">📞</span>
                         <span className="phone-number">+370 678 41599</span>
                     </a>
-
-                    {/* Mobile Menu Button */}
-                    <button
-                        className="menu-toggle"
-                        onClick={toggleMenu}
-                        aria-label="Toggle menu"
-                        type="button"
-                    >
-                        <span className={`menu-icon ${menuOpen ? 'open' : ''}`}>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
-                    </button>
                 </div>
+
+                {/* Mobile Menu Button - Moved outside header-right for reliable positioning */}
+                <button
+                    className="menu-toggle"
+                    onClick={toggleMenu}
+                    aria-label="Toggle menu"
+                    type="button"
+                >
+                    <span className={`menu-icon ${menuOpen ? 'open' : ''}`}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+                {/* Mobile Menu Overlay */}
+                {menuOpen && (
+                    <div className="mobile-menu-overlay" onClick={() => setMenuOpen(false)}>
+                        <nav className="mobile-nav" onClick={(e) => e.stopPropagation()}>
+                            {navItems.map((item) => (
+                                <Link
+                                    key={item.path}
+                                    to={item.path}
+                                    className={`mobile-nav-link ${location.pathname === item.path ? 'active' : ''}`}
+                                    onClick={() => setMenuOpen(false)}
+                                >
+                                    {t(item.label)}
+                                </Link>
+                            ))}
+                            <a href="tel:+37067841599" className="mobile-phone-btn">
+                                📞 +370 678 41599
+                            </a>
+                        </nav>
+                    </div>
+                )}
             </div>
-
-            {/* Mobile Menu Overlay */}
-            {menuOpen && (
-                <div className="mobile-menu-overlay" onClick={() => setMenuOpen(false)}>
-                    <nav className="mobile-nav" onClick={(e) => e.stopPropagation()}>
-                        {navItems.map((item) => (
-                            <Link
-                                key={item.path}
-                                to={item.path}
-                                className={`mobile-nav-link ${location.pathname === item.path ? 'active' : ''}`}
-                                onClick={() => setMenuOpen(false)}
-                            >
-                                {t(item.label)}
-                            </Link>
-                        ))}
-                        <a href="tel:+37067841599" className="mobile-phone-btn">
-                            📞 +370 678 41599
-                        </a>
-                    </nav>
-                </div>
-            )}
         </header>
     )
 }
