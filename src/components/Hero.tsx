@@ -10,33 +10,33 @@ export function Hero() {
             <div className="hero-bg">
                 <img src="/hero_autoservice_premium.png" alt="Okra1 Autoservisas" />
             </div>
-            <div className="hero-overlay">
-                <div className="hero-content">
-                    <div className="hero-text">
-                        <span className="hero-tag">{t('tag.services')}</span>
-                        <h1>{t('hero.title')}</h1>
-                        <p className="hero-subtitle">{t('hero.subtitle')}</p>
+            <div className="hero-overlay"></div>
 
-                        <div className="hero-cta">
-                            <Link to="/contact" className="btn btn-primary">
-                                {t('hero.cta.contact')}
-                            </Link>
-                            <Link to="/services" className="btn btn-secondary">
-                                {t('hero.cta.services')}
-                            </Link>
-                        </div>
+            <div className="hero-content">
+                <div className="hero-text">
+                    <span className="hero-tag">{t('tag.services')}</span>
+                    <h1>{t('hero.title')}</h1>
+                    <p className="hero-subtitle">{t('hero.subtitle')}</p>
+
+                    <div className="hero-cta">
+                        <Link to="/contact" className="btn btn-primary">
+                            {t('hero.cta.contact')}
+                        </Link>
+                        <Link to="/services" className="btn btn-secondary">
+                            {t('hero.cta.services')}
+                        </Link>
                     </div>
+                </div>
 
-                    <div className="hero-stats">
-                        <div className="stat-item">
-                            <span className="stat-number">20+</span>
-                            <span className="stat-label">metų patirties</span>
-                        </div>
-                        <div className="stat-divider"></div>
-                        <div className="stat-item">
-                            <span className="stat-number">5000+</span>
-                            <span className="stat-label">patenkintų klientų</span>
-                        </div>
+                <div className="hero-stats">
+                    <div className="stat-item">
+                        <span className="stat-number">20+</span>
+                        <span className="stat-label">metų patirties</span>
+                    </div>
+                    <div className="stat-divider"></div>
+                    <div className="stat-item">
+                        <span className="stat-number">5000+</span>
+                        <span className="stat-label">patenkintų klientų</span>
                     </div>
                 </div>
             </div>
