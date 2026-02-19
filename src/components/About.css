@@ -33,21 +33,21 @@
 }
 
 .about-lead {
-    color: #FFFFFF;
+    color: #1e293b;
+    /* Dark navy for readability */
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 1.7;
     margin-bottom: 1.5rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .about-text {
-    color: #FFFFFF;
+    color: #475569;
+    /* Slate grey for body text */
     font-size: 1.05rem;
     font-weight: 500;
     line-height: 1.8;
     margin-bottom: 1rem;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .about-visual {
