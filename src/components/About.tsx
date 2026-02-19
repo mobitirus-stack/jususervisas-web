@@ -17,10 +17,10 @@ export function About() {
                 <div className="about-grid">
                     <div className="about-content">
                         <span className="section-tag">{t('tag.about')}</span>
-                        <h2 className="section-title">{t('about.title')}</h2>
-                        <p className="about-lead">{t('about.subtitle')}</p>
-                        <p className="about-text">{t('about.text1')}</p>
-                        <p className="about-text">{t('about.text2')}</p>
+                        <h2 className="section-title">{localStorage.getItem('about_title') || t('about.title')}</h2>
+                        <p className="about-lead">{localStorage.getItem('about_subtitle') || t('about.subtitle')}</p>
+                        <p className="about-text">{localStorage.getItem('about_text1') || t('about.text1')}</p>
+                        <p className="about-text">{localStorage.getItem('about_text2') || t('about.text2')}</p>
                     </div>
 
                     <div className="about-visual">

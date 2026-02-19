@@ -28,6 +28,7 @@ export function Footer() {
                             <Link to="/about">{t('nav.about')}</Link>
                             <Link to="/services">{t('nav.services')}</Link>
                             <Link to="/contact">{t('nav.contacts')}</Link>
+                            <Link to="/svetaines-informacija">Svetainės informacija</Link>
                         </div>
 
                         <div className="footer-col">

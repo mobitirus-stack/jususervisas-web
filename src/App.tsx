@@ -14,6 +14,8 @@ import { ContactPage } from './pages/ContactPage'
 import { AboutPage } from './pages/AboutPage'
 import { TireCatalogPage } from './pages/TireCatalogPage'
 import { PromotionsPage } from './pages/PromotionsPage'
+import { SiteInfoPage } from './pages/SiteInfoPage'
+import { AdminPage } from './pages/AdminPage'
 import './App.css'
 
 // Scroll to top on route change
@@ -45,6 +47,8 @@ function App() {
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/tires" element={<TireCatalogPage />} />
               <Route path="/promotions" element={<PromotionsPage />} />
+              <Route path="/svetaines-informacija" element={<SiteInfoPage />} />
+              <Route path="/admin" element={<AdminPage />} />
             </Routes>
           </main>
           <Footer />

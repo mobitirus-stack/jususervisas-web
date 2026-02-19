@@ -15,8 +15,8 @@ export function Hero() {
             <div className="hero-content">
                 <div className="hero-text">
                     <span className="hero-tag">{t('tag.services')}</span>
-                    <h1>{t('hero.title')}</h1>
-                    <p className="hero-subtitle">{t('hero.subtitle')}</p>
+                    <h1>{localStorage.getItem('hero_title') || t('hero.title')}</h1>
+                    <p className="hero-subtitle">{localStorage.getItem('hero_subtitle') || t('hero.subtitle')}</p>
 
                     <div className="hero-cta">
                         <Link to="/contact" className="btn btn-primary">

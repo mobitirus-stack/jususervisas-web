@@ -1,9 +1,20 @@
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { useI18n, services } from '../i18n'
+import { useI18n, services as defaultServices } from '../i18n'
 import './Services.css'
 
 export function Services() {
     const { t } = useI18n()
+    const [displayServices, setDisplayServices] = useState<any[]>([])
+
+    useEffect(() => {
+        const saved = localStorage.getItem('custom_services')
+        if (saved) {
+            setDisplayServices(JSON.parse(saved))
+        } else {
+            setDisplayServices(defaultServices)
+        }
+    }, [])
 
     return (
         <section id="services" className="services">
@@ -15,18 +26,18 @@ export function Services() {
                 </div>
 
                 <div className="services-grid">
-                    {services.slice(0, 8).map((service) => (
+                    {displayServices.slice(0, 8).map((service) => (
                         <Link
                             key={service.id}
                             to={`/services/${service.id}`}
                             className="service-card"
                         >
                             <div className="service-image">
-                                <img src={service.image} alt={t(service.titleKey)} />
+                                <img src={service.image} alt={service.title || t(service.titleKey)} />
                             </div>
                             <div className="service-info">
-                                <h3>{t(service.titleKey)}</h3>
-                                <p>{t(service.shortKey)}</p>
+                                <h3>{service.title || t(service.titleKey)}</h3>
+                                <p>{service.short || t(service.shortKey)}</p>
                             </div>
                         </Link>
                     ))}

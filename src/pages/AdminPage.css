@@ -1,0 +1,161 @@
+.admin-page {
+    background: #f8fafc;
+    min-height: 100vh;
+    padding-bottom: 6rem;
+}
+
+.admin-hero {
+    background: #1e293b;
+    color: white;
+    padding: 8rem 2rem 4rem;
+    text-align: center;
+}
+
+.admin-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.admin-hero p {
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.reset-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.reset-btn:hover {
+    background: #dc2626;
+}
+
+.admin-content {
+    max-width: 800px;
+    margin: -2rem auto 0;
+}
+
+.admin-section {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 3rem;
+}
+
+.admin-section h2 {
+    color: #0f172a;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 0.75rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #334155;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #fbbf24;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.save-btn {
+    background: #fbbf24;
+    color: #1e293b;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.save-btn:hover {
+    background: #f59e0b;
+    transform: translateY(-2px);
+}
+
+.services-list-admin {
+    margin-bottom: 2rem;
+}
+
+.service-item-admin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.delete-btn-small {
+    background: #fee2e2;
+    color: #ef4444;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.delete-btn-small:hover {
+    background: #fecaca;
+}
+
+.add-service-form {
+    border-top: 2px dashed #f1f5f9;
+    padding-top: 2rem;
+}
+
+.add-service-form h3 {
+    margin-bottom: 1.5rem;
+}
+
+.add-btn {
+    background: #10b981;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+}
+
+.add-btn:hover {
+    background: #059669;
+}
