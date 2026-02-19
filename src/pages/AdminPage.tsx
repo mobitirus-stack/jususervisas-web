@@ -33,6 +33,12 @@ export function AdminPage() {
     });
 
     const [services, setServices] = useState<Service[]>([]);
+    const [newService, setNewService] = useState({
+        title: '',
+        short: '',
+        image: '/service_placeholder.png',
+        icon: '🔧'
+    });
 
     useEffect(() => {
         const savedServices = localStorage.getItem('custom_services');
@@ -99,12 +105,6 @@ export function AdminPage() {
         }
     };
 
-    const [newService, setNewService] = useState({
-        title: '',
-        short: '',
-        image: '/service_placeholder.png',
-        icon: '🔧'
-    });
 
     const handleAddService = (e: React.FormEvent) => {
         e.preventDefault();
